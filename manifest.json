@@ -1,0 +1,22 @@
+{
+	"manifest_version": 1,
+	"id": "header",
+	"name": "Header widget",
+	"description": "Displays your own text or HTML content in separate widget",
+	"version": "1.0",
+	"namespace": "Header",
+	"author": "initMAX s.r.o.",
+	"url": "https://www.initmax.com",
+	"require": {
+		"zabbix": "^6.0"
+	},
+	"actions": {
+		"widget.header.view": {
+			"class": "widgets/HeaderView",
+			"view": "widgets/header.view",
+			"layout": "layout.widget"
+		}
+	},
+	"config": {
+	}
+}
