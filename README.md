@@ -20,3 +20,12 @@
 - Use the Scan directory button on the top
 - Enable the module
 - Use it and enjoy!
+
+
+---  
+**Like, share and follow us** 😍 for more content:  
+- [LinkedIn](https://www.linkedin.com/company/initmax/)🔥
+- [Twitter](https://twitter.com/initmax1)
+- [Instagram](https://www.instagram.com/initmax/)
+- [Facebook](https://www.facebook.com/initmax)
+- [Web](https://www.initmax.cz/)
