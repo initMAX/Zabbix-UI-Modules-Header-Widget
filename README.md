@@ -1,10 +1,10 @@
 # Zabbix Header widget
 
 ## Configuration popup
-<img src="https://git.initmax.cz/initMAX-Public/Zabbix-Header-Widget/raw/branch/master/img/Header-widget-configuration-popup.png" width="525" height="450" />
+<img src="https://git.initmax.cz/initMAX-Public/Zabbix-UI-Modules-Header-Widget/-/raw/master/img/Header-widget-configuration-popup.png" width="525" height="450" />
 
 ## Widget
-<img src="https://git.initmax.cz/initMAX-Public/Zabbix-Header-Widget/raw/branch/master/img/Header-widget-example.png" width="700" height="500" />
+<img src="https://git.initmax.cz/initMAX-Public/Zabbix-UI-Modules-Header-Widget/-/raw/master/img/Header-widget-example.png" width="700" height="500" />
 
 
 ### Functionality
