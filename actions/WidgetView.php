@@ -18,16 +18,21 @@
 ** Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 **/
 
-namespace Modules\Header\Helpers\Html;
+namespace Modules\Header\Actions;
 
-use CColHeader;
+use CControllerDashboardWidgetView;
+use CControllerResponseData;
 
-class CColHeaderHtml extends CColHeader
+class WidgetView extends CControllerDashboardWidgetView
 {
-    public function addRawHtml($value)
-    {
-		array_push($this->items, $value);
-
-		return $this;
+	protected function doAction(): void 
+	{
+		$this->setResponse(new CControllerResponseData([
+			'name' => $this->getInput('name', $this->widget->getName()),
+			'fields_values' => $this->fields_values,
+			'user' => [
+				'debug_mode' => $this->getDebugMode()
+			],
+		]));
 	}
 }

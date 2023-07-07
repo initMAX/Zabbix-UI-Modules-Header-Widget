@@ -1,4 +1,4 @@
-<?php
+<?php declare(strict_types = 0);
 /*
 ** initMAX
 ** Copyright (C) 2021-2022 initMAX s.r.o.
@@ -18,16 +18,19 @@
 ** Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 **/
 
-namespace Modules\Header\Helpers\Html;
+?>
 
-use CDiv;
+window.widget_header_form = new class {
 
-class CDivHtml extends CDiv
-{
-    public function addRawHtml($value)
-	{
-		array_push($this->items, $value);
+	init() {
+		this._form = document.getElementById('widget-dialogue-form');
 
-		return $this;
+		for (const colorpicker of this._form.querySelectorAll('.<?= ZBX_STYLE_COLOR_PICKER ?> input')) {
+			$(colorpicker).colorpicker({
+				appendTo: '.overlay-dialogue-body',
+				use_default: true,
+				onUpdate: window.setIndicatorColor
+			});
+		}
 	}
-}
+};

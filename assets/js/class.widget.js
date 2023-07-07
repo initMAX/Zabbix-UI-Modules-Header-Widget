@@ -1,4 +1,3 @@
-<?php
 /*
 ** initMAX
 ** Copyright (C) 2021-2022 initMAX s.r.o.
@@ -18,21 +17,8 @@
 ** Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 **/
 
-namespace Modules\Header\Compatibility\Html;
-
-use CTag;
-
-class CFormField extends CTag
-{
-    protected $instance;
-
-    public function __construct($child)
-    {
-        $this->instance = $child;
-    }
-
-    public function toString($destroy = true)
-    {
-        return $this->instance->toString($destroy);
+class CWidgetHeader extends CWidget {
+    _hasPadding() {
+        return false;
     }
 }

@@ -1,11 +1,13 @@
 # Zabbix Header widget
 
 ## Configuration popup
-<img src="https://git.initmax.cz/initMAX-Public/Zabbix-UI-Modules-Header-Widget/-/raw/master/img/Header-widget-configuration-popup.png" width="525" height="450" />
+<img src="img/header-widget-configuration-popup.png" width="525" height="450" />
 
 ## Widget
-<img src="https://git.initmax.cz/initMAX-Public/Zabbix-UI-Modules-Header-Widget/-/raw/master/img/Header-widget-example.png" width="700" height="500" />
+<img src="img/header-widget-example.png" width="700" height="500" />
 
+### Requirements
+ - Zabbix 6.4 or higher
 
 ### Functionality
  - Display custom text or HTML content
@@ -21,9 +23,8 @@
 - Enable the module
 - Use it and enjoy!
 
-
----  
-**Like, share and follow us** 😍 for more content:  
+---
+**Like, share and follow us** 😍 for more content:
 - [LinkedIn](https://www.linkedin.com/company/initmax/)🔥
 - [Twitter](https://twitter.com/initmax1)
 - [Instagram](https://www.instagram.com/initmax/)
