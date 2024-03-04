@@ -1,4 +1,3 @@
-<?php
 /*
 ** initMAX
 ** Copyright (C) 2021-2022 initMAX s.r.o.
@@ -18,37 +17,8 @@
 ** Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 **/
 
-namespace Modules\Header;
-
-use CController as CAction;
-use Core\CModule as ModuleBase;
-
-require_once 'CWidgetConfig.php';
-
-class Module extends ModuleBase
-{
-    /**
-     * Initialize module.
-     */
-	public function init(): void
-	{
-          $this->setCompatibilityMode(ZABBIX_VERSION);
-	}
-
-	/**
-     * Event handler, triggered before executing the action.
-     *
-     * @param CAction $action Action instance responsible for current request.
-     */
-	public function onBeforeAction(CAction $action): void
-	{
-          if ($action->getAction() === 'dashboard.view')
-          {
-               zbx_add_post_js(file_get_contents(__DIR__.'/public/js/class.widget.header.js'));
-          }
-	}
-
-     protected function setCompatibilityMode(string $version): void
-     {
-	}
+class CWidgetHeader extends CWidget {
+    _hasPadding() {
+        return false;
+    }
 }

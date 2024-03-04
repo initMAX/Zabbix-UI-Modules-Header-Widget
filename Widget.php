@@ -1,3 +1,4 @@
+<?php
 /*
 ** initMAX
 ** Copyright (C) 2021-2022 initMAX s.r.o.
@@ -16,3 +17,19 @@
 ** along with this program; if not, write to the Free Software
 ** Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 **/
+
+namespace Modules\Header;
+
+use Zabbix\Core\CWidget;
+
+class Widget extends CWidget 
+{
+	// Font styles
+	public const FONT_STYLE_BOLD = 0;
+	public const FONT_STYLE_ITALIC = 1;
+	public const FONT_STYLE_UNDERLINE = 2;
+
+    public function getDefaultName(): string {
+		return _('Header');
+	}
+}

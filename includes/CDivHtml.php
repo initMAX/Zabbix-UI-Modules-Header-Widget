@@ -18,14 +18,21 @@
 ** Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 **/
 
-namespace Modules\Header\Helpers\Html;
+namespace Modules\Header\Includes;
 
-use CTable;
+use CTag;
 
-class CTableHtml extends CTable
+class CDivHtml extends CTag
 {
-    public function addRawHtml($value)
+    public function __construct($items = null)
     {
+        parent::__construct('div', true);
+
+		$this->addItem($items);
+    }
+
+    public function addRawHtml($value)
+	{
 		array_push($this->items, $value);
 
 		return $this;
