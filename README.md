@@ -10,7 +10,9 @@
 
 ## Required Zabbix version
 
-Zabbix 7.0.0beta1
+Zabbix 7.0.0beta1 (this branch)
+Zabbix 6.4.12 (6.4 branch)
+Zabbix 6.2.9 (6.2 branch)
 
 ## Functionality
 
