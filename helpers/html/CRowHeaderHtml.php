@@ -1,3 +1,4 @@
+<?php
 /*
 ** initMAX
 ** Copyright (C) 2021-2022 initMAX s.r.o.
@@ -17,11 +18,16 @@
 ** Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 **/
 
+namespace Modules\Header\Helpers\Html;
 
-.dashboard-widget-header-wrapper {
-    display: flex;
-	width: 100%;
-	height: 100%;
-	justify-content: center;
-	align-items: center;
+use CRowHeader;
+
+class CRowHeaderHtml extends CRowHeader
+{
+    public function addRawHtml($value)
+    {
+		array_push($this->items, $value);
+
+		return $this;
+	}
 }
