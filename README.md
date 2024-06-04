@@ -49,7 +49,7 @@
     <h4>
         Displays custom text. Should be used as header for section with widgets or button with linked url. <!-- !!! change version !!! -->
     </h4><br>
-    <img alt="Static Badge" src="https://img.shields.io/badge/Required%20Zabbix%20version-7.0-red"> <!-- !!! change version !!! -->
+    <img alt="Static Badge" src="https://img.shields.io/badge/Zabbix%20version-7.0-red"> <!-- !!! change version !!! -->
     <img alt="Static Badge" src="https://img.shields.io/badge/Required%20php%20version-8.0-blue"> <!-- !!! change version !!! -->
     <h3>
         <a href="#release-notes">Release notes</a> •
@@ -100,10 +100,10 @@ You can customize the content in the following ways:
     cd /usr/share/zabbix/modules/
     ```
 
-- Navigate to the `ui/modules/` directory (`ui` is typically located at `/usr/share/zabbix/`)
+- Clone repository on your server <!-- !!! repository !!! -->
     ```sh
-    cd /usr/share/zabbix/modules/
-    ```
+    git clone https://git.initmax.cz/initMAX-Public/Zabbix-UI-Modules-Header-Widget.git
+    ``` 
 
 - Change the owner of directory to your web user with `chown`
   - default OS users
