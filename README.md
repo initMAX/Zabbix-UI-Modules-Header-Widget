@@ -95,15 +95,15 @@ You can customize the content in the following ways:
 ## Installation
 - Connect to your Zabbix frontend server (perform on all frontend nodes)
 
-- Navigate to the `ui/modules/` directory (`ui` is typically located at `/usr/share/zabbix/ui/`)
+- Navigate to the `ui/modules/` directory (`ui` is typically located at `/usr/share/zabbix/`)
     ```sh
-    cd /usr/share/zabbix/ui/modules/
+    cd /usr/share/zabbix/modules/
     ```
 
-- Clone repository on your server <!-- !!! repository !!! -->
+- Navigate to the `ui/modules/` directory (`ui` is typically located at `/usr/share/zabbix/`)
     ```sh
-    git clone https://git.initmax.cz/initMAX-Public/Zabbix-UI-Modules-Header-Widget.git
-    ``` 
+    cd /usr/share/zabbix/modules/
+    ```
 
 - Change the owner of directory to your web user with `chown`
   - default OS users
