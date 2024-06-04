@@ -1,0 +1,29 @@
+{
+	"manifest_version": 2.0,
+	"id": "header",
+	"type": "widget",
+	"name": "Header widget",
+	"namespace": "Header",
+	"version": "1.1",
+	"author": "initMAX s.r.o.",
+	"url": "https://www.initmax.com",
+	"description": "Displays custom text. Should be used as header for section with widgets or button with linked url.",
+	"actions": {
+		"widget.header.view": {
+			"class": "WidgetView"
+		}
+	},
+	"widget": {
+		"name": "Header",
+		"size": {
+			"width": 6,
+			"height": 3
+		},
+		"refresh_rate": 0,
+		"js_class": "CWidgetHeader"
+	},
+	"assets": {
+		"css": ["widget.css"],
+		"js": ["class.widget.js"]
+	}
+}
